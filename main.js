@@ -77,23 +77,19 @@ function loadSolarModel(model){
 
 //solar Events
 sun.addEventListener('click',()=>{
-    solarModel = loadSolarModel('solarModels/Sun.glb')
-    
+    solarModel = loadSolarModel('solarModels/Sun.glb');    
 });
 
 mercury.addEventListener('click',()=>{
-    solarModel = loadSolarModel('solarModels/Mercury.glb');
-    
+    solarModel = loadSolarModel('solarModels/Mercury.glb');   
 });
 
 venus.addEventListener('click',()=>{
-    solarModel = loadSolarModel('solarModels/Venus.glb');
-    
+    solarModel = loadSolarModel('solarModels/Venus.glb');    
 });
 
 earth.addEventListener('click',()=>{
-    solarModel = loadSolarModel('solarModels/Earth.glb');
-    
+    solarModel = loadSolarModel('solarModels/Earth.glb');   
 });
 
 mars.addEventListener('click',()=>{
@@ -102,23 +98,19 @@ mars.addEventListener('click',()=>{
 });
 
 jupiter.addEventListener('click',()=>{
-    solarModel = loadSolarModel('solarModels/Jupiter.glb');
-    
+    solarModel = loadSolarModel('solarModels/Jupiter.glb');    
 });
 
 saturn.addEventListener('click',()=>{
-    solarModel = loadSolarModel('solarModels/Saturn.glb');
-    
+    solarModel = loadSolarModel('solarModels/Saturn.glb');   
 });
 
 uranus.addEventListener('click',()=>{
-    solarModel = loadSolarModel('solarModels/Uranus.glb');
-   
+    solarModel = loadSolarModel('solarModels/Uranus.glb');  
 });
 
 neptune.addEventListener('click',()=>{
     solarModel = loadSolarModel('solarModels/Neptune.glb');
-    
 });
 
 
