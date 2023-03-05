@@ -74,41 +74,60 @@ function loadSolarModel(model){
    })
 }
 
+
 //solar Events
 sun.addEventListener('click',()=>{
     solarModel = loadSolarModel('solarModels/Sun.glb')
+    hitTestSourceRequested = false;
+    hitTestSource = null;
 });
 
 mercury.addEventListener('click',()=>{
     solarModel = loadSolarModel('solarModels/Mercury.glb');
+    hitTestSourceRequested = false;
+    hitTestSource = null;
 });
 
 venus.addEventListener('click',()=>{
     solarModel = loadSolarModel('solarModels/Venus.glb');
+    hitTestSourceRequested = false;
+    hitTestSource = null;
 });
 
 earth.addEventListener('click',()=>{
     solarModel = loadSolarModel('solarModels/Earth.glb');
+    hitTestSourceRequested = false;
+    hitTestSource = null;
 });
 
 mars.addEventListener('click',()=>{
     solarModel = loadSolarModel('solarModels/Mars.glb');
+    hitTestSourceRequested = false;
+    hitTestSource = null;
 });
 
 jupiter.addEventListener('click',()=>{
     solarModel = loadSolarModel('solarModels/Jupiter.glb');
+    hitTestSourceRequested = false;
+    hitTestSource = null;
 });
 
 saturn.addEventListener('click',()=>{
     solarModel = loadSolarModel('solarModels/Saturn.glb');
+    hitTestSourceRequested = false;
+    hitTestSource = null;
 });
 
 uranus.addEventListener('click',()=>{
     solarModel = loadSolarModel('solarModels/Uranus.glb');
+    hitTestSourceRequested = false;
+    hitTestSource = null;
 });
 
 neptune.addEventListener('click',()=>{
     solarModel = loadSolarModel('solarModels/Neptune.glb');
+    hitTestSourceRequested = false;
+    hitTestSource = null;
 });
 
 
@@ -118,13 +137,7 @@ controller.addEventListener('select',onClick);
 scene.add(controller);
 
 
-reticle = new THREE.Mesh(
-    new THREE.RingGeometry( 0.15, 0.2, 32 ).rotateX( - Math.PI / 2 ),
-    new THREE.MeshBasicMaterial()
-);
-reticle.matrixAutoUpdate = false;
-reticle.visible = false;
-scene.add( reticle );
+
 
 function onClick(){
 
