@@ -77,15 +77,11 @@ function loadSolarModel(model){
 
 //solar Events
 sun.addEventListener('click',()=>{
-    solarModel = loadSolarModel('solarModels/Sun.glb');
-    hitTestSource = null;
-    hitTestSourceRequested = false;    
+    solarModel = loadSolarModel('solarModels/Sun.glb');    
 });
 
 mercury.addEventListener('click',()=>{
-    solarModel = loadSolarModel('solarModels/Mercury.glb'); 
-    hitTestSource = null;
-    hitTestSourceRequested = false;  
+    solarModel = loadSolarModel('solarModels/Mercury.glb');   
 });
 
 venus.addEventListener('click',()=>{
