@@ -77,11 +77,15 @@ function loadSolarModel(model){
 
 //solar Events
 sun.addEventListener('click',()=>{
-    solarModel = loadSolarModel('solarModels/Sun.glb');    
+    solarModel = loadSolarModel('solarModels/Sun.glb');
+    hitTestSource = null;
+    hitTestSourceRequested = false;    
 });
 
 mercury.addEventListener('click',()=>{
-    solarModel = loadSolarModel('solarModels/Mercury.glb');   
+    solarModel = loadSolarModel('solarModels/Mercury.glb'); 
+    hitTestSource = null;
+    hitTestSourceRequested = false;  
 });
 
 venus.addEventListener('click',()=>{
@@ -119,7 +123,13 @@ const controller = renderer.xr.getController(0);
 controller.addEventListener('select',onClick);
 scene.add(controller);
 
-
+reticle = new THREE.Mesh(
+    new THREE.RingGeometry( 0.15, 0.2, 32 ).rotateX( - Math.PI / 2 ),
+    new THREE.MeshBasicMaterial()
+);
+reticle.matrixAutoUpdate = false;
+reticle.visible = false;
+scene.add( reticle );
 
 
 function onClick(){
