@@ -22,7 +22,7 @@ let hitTestSource = null;
 let hitTestSourceRequested = false;
 let reticle;
 let planet;
-//let solarModel;
+
 
 const scene = new THREE.Scene();
 
